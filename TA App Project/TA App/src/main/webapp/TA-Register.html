@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .form-container {
+            display: flex;
+            justify-content: space-between;
+            width: 600px;
+        }
+        .form-container div {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 48%; /* Adjust the width as needed */
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            width: 100%;
+        }
+        input,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 12px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: #fff;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+
+    <div>
+    <center> Teaching Assistants Register Here</center><br><br>
+        <form action="#" method="post">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+
+            <label for="mobileNumber">Mobile Number:</label>
+            <input type="tel" id="mobileNumber" name="mobileNumber" pattern="[0-9]{10}" required>
+            <!-- The pattern attribute enforces 10 numeric characters for a typical mobile number. -->
+
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="repeatPassword">Repeat Password:</label>
+            <input type="password" id="repeatPassword" name="repeatPassword" required>
+      
+    </div>
+
+    <div>
+      
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+
+            <label for="qualification">Qualification:</label>
+            <input type="text" id="qualification" name="qualification" required>
+
+            <input type="submit" value="Register">
+        </form><br><br><br><br>
+         <center> Already Registered? Login</center>
+    </div>
+</div>
+</body>
+</html>
